@@ -11,7 +11,21 @@
       "extra-files" : [
         "internal/version.go"
       ],
-      "exclude-paths": ["ldotel"]
+      "exclude-paths": [
+        ".github",
+        ".vscode",
+        "ldotel",
+        ".gitignore",
+        ".golangci.yml",
+        "release-please-config.json",
+        ".release-please-manifest.json",
+        "CODEOWNERS",
+        "CONTRIBUTING.md",
+        "LICENSE.txt",
+        "Makefile",
+        "README.md",
+        "SECURITY.md"
+      ]
     },
     "ldotel" : {
       "package-name": "ldotel",
