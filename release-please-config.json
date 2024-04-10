@@ -24,7 +24,8 @@
         "LICENSE.txt",
         "Makefile",
         "README.md",
-        "SECURITY.md"
+        "SECURITY.md",
+        ".sdk_metadata.json"
       ]
     },
     "ldotel" : {
