@@ -2,6 +2,24 @@
 
 All notable changes to the LaunchDarkly Go SDK will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org).
 
+## [7.4.0](https://github.com/kinyoklion/go-server-sdk/compare/v7.3.0...v7.4.0) (2024-04-10)
+
+
+### Features
+
+* Add support for hooks. ([#126](https://github.com/kinyoklion/go-server-sdk/issues/126)) ([929ef8b](https://github.com/kinyoklion/go-server-sdk/commit/929ef8b146dce99030a81033646f380a6b21fd98))
+* **deps:** bump supported Go versions to 1.22 and 1.21 ([#114](https://github.com/kinyoklion/go-server-sdk/issues/114)) ([0ac6d4d](https://github.com/kinyoklion/go-server-sdk/commit/0ac6d4d006cdf1acb31ad727295bb825c204f464))
+* Implement otel tracing hook. ([#130](https://github.com/kinyoklion/go-server-sdk/issues/130)) ([f5675c1](https://github.com/kinyoklion/go-server-sdk/commit/f5675c1d20976dc1f9dbb4064ab648abfd7765c2))
+* Implement supporting types for hooks. ([#125](https://github.com/kinyoklion/go-server-sdk/issues/125)) ([7f06147](https://github.com/kinyoklion/go-server-sdk/commit/7f061475333cb09e9d59defc4046840af999b472))
+* Inline contexts for all evaluation events ([#111](https://github.com/kinyoklion/go-server-sdk/issues/111)) ([0fad2bb](https://github.com/kinyoklion/go-server-sdk/commit/0fad2bb0790f711f3fd5014204490f5f36497dd2))
+* Redact anonymous attributes within feature events ([0fad2bb](https://github.com/kinyoklion/go-server-sdk/commit/0fad2bb0790f711f3fd5014204490f5f36497dd2))
+
+
+### Bug Fixes
+
+* **deps:** bump golang.org/x/crypto from 0.1.0 to 0.17.0 ([5d26f59](https://github.com/kinyoklion/go-server-sdk/commit/5d26f59f915c62636d7ba8b0a06e00a6c6c3f677))
+* do not emit error when RelayProxyEndpointsWithoutEvents is used ([#110](https://github.com/kinyoklion/go-server-sdk/issues/110)) ([0551bf1](https://github.com/kinyoklion/go-server-sdk/commit/0551bf115902f1f2d0691a060c1a16fc60ea7e69))
+
 ## [7.3.0](https://github.com/launchdarkly/go-server-sdk/compare/v7.2.0...v7.3.0) (2024-04-03)
 
 This release introduces a Hooks API. Hooks are collections of user-defined callbacks that are executed by the SDK at various points of interest. You can use them to augment the SDK with metrics or tracing.
